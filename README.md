@@ -1,2 +1,1 @@
-# visit_rwanda_clone_with_html_css
-This project demonstrates a Clone of Visit Rwanda Website done with Pure Html and css
+<h1>visit_rwanda_clone_with_html_css</h1>
