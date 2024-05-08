@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        max-width: 500px;
+        margin: 50px auto;
+        border:1px solid black;
+        background-color: white;
+        border-radius: 7px;
+        padding: 10px;
+        
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    body{
+        background-color: rgb(75, 75, 133);
+    }
+    .form input{
+        width: 44%;
+        padding: 12px;
+        border: 1px solid lightgrey;
+        outline: none;
+        border-radius: 7px;
+    }
+    button{
+        width:30px;
+        height: 30px;
+        cursor: pointer;
+        color:white;
+        border:0px;
+        
+    }
+    button:hover{
+        background-color: grey;
+        transform: scale(1.1);
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .dark{
+        background-color: #071129;
+    }
+    .light{
+        background-color: #420123;
+    }
+    #output{
+        border:1px solid lightgray;
+        padding: 5px;
+        text-align: center;
+        margin:20px auto;
+        height:70px;
+    }
+</style>
+<body>
+<div align="center" class="form">
+        <h1 align="center">calculator</h1>
+        <input type="text" id="name" placeholder="number one">
+        <input type="text" id="message" placeholder="number two">
+        <p></p>
+        <button align="center" class="red" onclick="send()">*</button>
+        <button align="center" class="blue" onclick="pop()">+</button>
+        <button align="center" class="dark" onclick="papa()">-</button>
+        <button align="center" class="light" onclick="mama()">/</button>
+        <p align="left">Output here</p>
+
+        <p id="sum"></p>
+        
+        
+        
+    </h2>
+    </div>
+    <script>
+        function send(){
+            var name = document.querySelector("#name").value 
+            var message = document.querySelector("#message").value
+            
+            document.querySelector('#sum').innerHTML = parseFloat(name)*parseFloat(message)
+            
+
+        }
+        function pop(){
+            var name = document.querySelector("#name").value 
+            var message = document.querySelector("#message").value
+            
+            document.querySelector('#sum').innerHTML = parseFloat(name)+parseFloat(message)
+            
+
+        }
+        function mama(){
+            var name = document.querySelector("#name").value 
+            var message = document.querySelector("#message").value
+            
+            document.querySelector('#sum').innerHTML = parseFloat(name)/parseFloat(message)
+        }
+        function papa(){
+            var name = document.querySelector("#name").value 
+            var message = document.querySelector("#message").value
+            
+            document.querySelector('#sum').innerHTML = parseFloat(name)-parseFloat(message)
+        }
+        function umwana(){
+            var name = document.querySelector("#name").value 
+            var message = document.querySelector("#message").value
+            
+            document.querySelector('#sum').innerHTML = "nuko urakoze"
+        }
+
+    </script>
+</div>
+
+</body>
+</html>

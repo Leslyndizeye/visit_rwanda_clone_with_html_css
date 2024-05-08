@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../test"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "visit_rwanda_clone_with_html_css",
+		"liveServer.settings.port": 5501
+	}
+}
